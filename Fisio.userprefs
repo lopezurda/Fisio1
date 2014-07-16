@@ -1,0 +1,66 @@
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web/Pacientes/AltaPaciente.aspx">
+    <Files>
+      <File FileName="Web/Pacientes/MostrarPaciente.aspx.designer.cs" Line="70" Column="52" />
+      <File FileName="Web/Pacientes/MostrarPaciente.aspx" Line="4" Column="38" />
+      <File FileName="Web/Pacientes/AltaPaciente.aspx.designer.cs" Line="119" Column="3" />
+      <File FileName="Web/Pacientes/AltaPaciente.aspx" Line="70" Column="9" />
+      <File FileName="Web/Pacientes/BusquedaPacientes.aspx.designer.cs" Line="64" Column="74" />
+      <File FileName="Web/Citas/DarCita.aspx.designer.cs" Line="56" Column="4" />
+      <File FileName="Web/Plantillas/PlantillaMaestra.master.designer.cs" Line="7" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Web" expanded="True">
+            <Node name="Citas" expanded="True">
+              <Node name="DarCita.aspx" expanded="True" />
+            </Node>
+            <Node name="css" expanded="True" />
+            <Node name="Pacientes" expanded="True">
+              <Node name="AltaPaciente.aspx" expanded="True" selected="True" />
+              <Node name="BusquedaPacientes.aspx" expanded="True" />
+              <Node name="InicioTratamiento.aspx" expanded="True" />
+              <Node name="MostrarPaciente.aspx" expanded="True" />
+            </Node>
+            <Node name="Plantillas" expanded="True">
+              <Node name="PlantillaMaestra.master" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Node name="Web" expanded="True">
+            <Node name="References" selected="True" />
+            <Node name="Web" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>$exception</Value>
+          <Value>estudios.Count</Value>
+          <Value>estudios[0].Nombre</Value>
+          <Value>estudios[0].Id</Value>
+          <Value>ddlEstudios</Value>
+          <Value>resultado</Value>
+          <Value>tb</Value>
+          <Value>resutadoBusquedaPAcientesGridView</Value>
+          <Value>e</Value>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

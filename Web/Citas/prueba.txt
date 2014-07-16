@@ -1,0 +1,30 @@
+		<gaia:Label ID="lblDarCita" Runat="server" Text="Dar Cita"/>
+
+		<gaia:Label ID="lblPaciente" Runat="server" Text="Paciente:"/>
+		<gaia:TextBox ID="txtPaciente" Runat="server" Enabled="false"/>
+
+		<gaia:Label ID="lblFisioterapeuta" Runat="server" Text="Fisioterapeuta:"/>
+		<gaia:DropDownList ID="ddlFisioterapeutas" Runat="server" AutoPostBack="true" Width="150px"/>
+
+		<gaia:Label ID="lblSala" Runat="server" Text="Sala:"/>
+		<gaia:DropDownList ID="ddlSalas" Runat="server" AutoPostBack="true" Width="150px"/>
+
+		<gaia:Label ID="lblTipoCita" Runat="server" Text="Tipo Cita:"/>
+
+		<gaia:RadioButtonList ID="rbTipoCita" Runat="server" AutoPostBack="true" OnSelectedIndexChanged="rbTipoCita_OnSelectedIndexChanged">
+  			<asp:ListItem>30 minutos</asp:ListItem>
+			<asp:ListItem>1 hora</asp:ListItem>
+		</gaia:RadioButtonList>
+
+		<gaia:Label ID="lblHoraCita" Runat="server" Text="Hora Cita:"/>
+		<gaia:DropDownList ID="ddlHoraCita" Runat="server" AutoPostBack="True" Width="200px"/>
+
+		<gaia:Label id="lblFechaCita" Runat="server" Text="Fecha Cita:"/>
+		<gaia:DateTimePicker ID="dtpFechaCita" Runat="server" Width="150px" Format="dd/MM/yyyy" Culture="es-ES"
+					FirstDayOfWeek="Monday" HasTimePart="false" OnSelectedDateChanged="dptFechaCita_FechaCitaModificada" />
+
+		<gaia:Button ID="btnBuscarCitas" Runat="server" Text="Buscar Cita" OnClick="btnBuscarCitas_Click" />
+
+		<gaia:Button ID="btnGrabar" Runat="server" Text="Grabar" OnClick="btnGrabar_Click" />
+
+

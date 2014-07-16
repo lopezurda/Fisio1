@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+ 
+ 	<class name="Product" entity-name="fis_item">
+		<id name="Id" column="id" type="int">
+			<generator class="increment"/>			
+		</id>
+		<property name="Name" column="nombre" type="string"/>
+		<property name="Description" column="descripcion" type="string"/>
+		<property name="Quantity" column="cantidad" type="int"/>
+		<property name="WarningGap" column="umbral_aviso" type="int"/>
+<!--		<property name="RepositionDate" column="fecha_reposicion" type="TimeStamp"/>	-->	
+	</class>
+<!--dsd		
+
+	  id integer NOT NULL,
+  nombre character(255) NOT NULL,
+  descripcion character(255),
+  cantidad integer,
+  umbral_aviso integer,
+  fecha_reposicion date NOT NULL,
+  CONSTRAINT id PRIMARY KEY (id)
+
+	
+				  <class name="Factura">
+		<id name="Id" column ="IdFactura" type="int" unsaved-value="0">
+		  <generator class="identity"/>
+		</id>
+		<property name="Fecha" type="DateTime" not-null="true"/>
+		<bag name="Lineas" cascade="all-delete-orphan">
+		  <key column="IdFactura"/>
+		  <one-to-many class="LineaFactura"/>
+		</bag>
+	  </class>
+-->  
+</hibernate-mapping>

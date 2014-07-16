@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+	
+ 	<class name="HistoriaClinica" table="fis_historia_clinica">
+		<id name="NumeroHistoria" column="numero_historia" type="string"/>	
+ 		<one-to-one name="Paciente" property-ref="HistoriaClinica"/>
+    	<bag name="Citas" cascade="all-delete-orphan">
+			<key column="id_historia_clinica"/><one-to-many class="Cita"/>
+		</bag>	
+<!--		
+		<property name="Profesion" column="profesion" type="string"/>
+		<property name="Aficiones" column="aficiones" type="string"/>
+		<property name="Baja" column="baja" type="boolean"/>
+		<many-to-one name="HistoriClinica" class="HistoriaClinica" column="id_historia_clinica" unique="true" cascade="all"/>
+		<many-to-one name="Estudios" class="Estudios" column="id_estudios" unique="true" cascade="all"/>
+		<many-to-one name="DatosPersonales" class="Persona" column="id_persona" unique="true" cascade="all"/>
+		<many-to-one name="Estudio" class="Estudio" column="id_grupo_tratamiento" unique="true" cascade="none"/>
+		<many-to-one name="EstadoPaciente" class="EstadoPaciente" column="id_estado_paciente" unique="true" cascade="none"/>
+-->
+	</class> 		
+	
+ 
+</hibernate-mapping>

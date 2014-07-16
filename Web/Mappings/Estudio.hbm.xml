@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+ 
+ 	<class name="Estudio" table="fis_estudio">
+		<id name="Id" column="id" type="int">		
+			<generator class="increment"/>	
+		</id>
+		<property name="Nombre" column="nombre" type="string"/>	
+		<many-to-one name="GrupoTratamiento" class="GrupoTratamiento" column="id_grupo_tratamiento" unique="true" cascade="none"/>	
+	</class>  
+	
+	<query name="getGrupoTratamientoFromEstudio" cacheable="false" read-only="true">
+    <![CDATA[
+        select GrupoTratamiento from Estudio as estudio where estudio.Id=:id
+    ]]>
+  	</query>
+</hibernate-mapping>

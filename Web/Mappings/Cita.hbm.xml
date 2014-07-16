@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+	
+ 	<class name="Cita" table="fis_cita">
+		<id name="Id" column="id" type="int">			
+			<generator class="increment"/>					
+		</id>
+		<property name="Fecha" column="fecha" type="DateTime" not-null="false"/>
+		<many-to-one name="HistoriaClinica" class="HistoriaClinica" column="id_historia_clinica" cascade="all" not-null="false"/>		
+		<many-to-one name="Fisioterapeuta" class="Fisioterapeuta" column="id_fisioterapeuta" cascade="none" lazy="false" not-null="false"/>
+		<many-to-one name="Sala" class="Sala" column="id_sala" cascade="none" not-null="false"/>		
+	</class> 		
+
+	<query name="getCitasByDia" cacheable="false" read-only="true">
+    <![CDATA[
+    	from Cita as Cita where Cita.Fecha between :fechaInicioDia and :fechaFinDia
+    ]]>
+  	</query>	
+ 
+</hibernate-mapping>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14DC6C98-0654-4E38-8327-B80F2E833632}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="log4net">
+      <HintPath>..\..\..\sw\log4net-1.2.11\bin\mono\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.Npgsql">
+      <HintPath>..\..\..\sw\Npgsql\Mono2.0\bin\policy.2.0.Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\sw\Npgsql\Mono2.0\bin\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql.resources">
+      <HintPath>..\..\..\sw\Npgsql\Mono2.0\bin\es\Npgsql.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets.CommunityExtensions">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.CommunityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets.ComponentModel.3.7.1734.101">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.ComponentModel.3.7.1734.101.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets.Design">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets.Effects">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Gaia.WebWidgets.Extensions">
+      <HintPath>..\..\..\sw\Gaia.Ajax.GPL.3.7.1734.101\Library\Gaia.WebWidgets.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\sw\NUnit-2.6.0.12051\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\sw\NHibernate-3.3.1.GA-bin\Required_Bins\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\sw\NHibernate-3.3.1.GA-bin\Required_Bins\NHibernate.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="Salas\AltaSala.aspx" />
+    <Content Include="Salas\InicioSalas.aspx" />
+    <Content Include="Pacientes\AltaPaciente.aspx" />
+    <Content Include="Pacientes\BusquedaPacientes.aspx" />
+    <Content Include="Pacientes\MostrarPaciente.aspx" />
+    <Content Include="Pacientes\InicioTratamiento.aspx" />
+    <Content Include="Fisioterapeutas\AltaFisioterapeuta.aspx" />
+    <Content Include="Fisioterapeutas\BusquedaFisioterapeuta.aspx" />
+    <Content Include="Fisioterapeutas\MostrarFisioterapeuta.aspx" />
+    <Content Include="Citas\DarCita.aspx" />
+    <Content Include="App_Themes\Gaiax\Calendar.css" />
+    <Content Include="App_Themes\Gaiax\Common.css" />
+    <Content Include="App_Themes\Gaiax\ControlPicker.css" />
+    <Content Include="App_Themes\Gaiax\ExtendedButton.css" />
+    <Content Include="App_Themes\Gaiax\ExtendedPanel.css" />
+    <Content Include="App_Themes\Gaiax\Gaiax.skin" />
+    <Content Include="App_Themes\Gaiax\GridView.css" />
+    <Content Include="App_Themes\Gaiax\Shade.css" />
+    <Content Include="App_Themes\Gaiax\Slider.css" />
+    <Content Include="App_Themes\Gaiax\TabControl.css" />
+    <Content Include="App_Themes\Gaiax\Toolbar.css" />
+    <Content Include="App_Themes\Gaiax\Tools.css" />
+    <Content Include="App_Themes\Gaiax\TreeView.css" />
+    <Content Include="App_Themes\Gaiax\Window.css" />
+    <Content Include="App_Themes\Gaiax\cal-buttons.png" />
+    <Content Include="App_Themes\Gaiax\cal-gradient.png" />
+    <Content Include="App_Themes\Gaiax\extended-button.png" />
+    <Content Include="App_Themes\Gaiax\gridview-gradient.png" />
+    <Content Include="App_Themes\Gaiax\panel-gradient.png" />
+    <Content Include="App_Themes\Gaiax\shade-center.png" />
+    <Content Include="App_Themes\Gaiax\shade-leftright.png" />
+    <Content Include="App_Themes\Gaiax\shade-sprite.png" />
+    <Content Include="App_Themes\Gaiax\slider_sprite_horizontal.png" />
+    <Content Include="App_Themes\Gaiax\slider_sprite_vertical.png" />
+    <Content Include="App_Themes\Gaiax\tabs-sprite.png" />
+    <Content Include="App_Themes\Gaiax\toolbar-child-bg.png" />
+    <Content Include="App_Themes\Gaiax\toolbar-hover-child.png" />
+    <Content Include="App_Themes\Gaiax\toolbar-top-bottom.png" />
+    <Content Include="App_Themes\Gaiax\toolbar-white-top-bottom-hover.png" />
+    <Content Include="App_Themes\Gaiax\tools-sprite.png" />
+    <Content Include="App_Themes\Gaiax\treeview-sprite.png" />
+    <Content Include="App_Themes\Gaiax\window-corners.png" />
+    <Content Include="App_Themes\Gaiax\window-lr.png" />
+    <Content Include="App_Themes\Gaiax\window-tb.png" />
+    <Content Include="Imagenes\cabecera.gif" />
+    <Content Include="css\fisioterapia.css" />
+    <Content Include="Plantillas\PlantillaMaestra.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\Dao.cs" />
+    <Compile Include="DAO\IDao.cs" />
+    <Compile Include="Dominio\Product.cs" />
+    <Compile Include="Dominio\Persona.cs" />
+    <Compile Include="Dominio\Direccion.cs" />
+    <Compile Include="DAO\NHibernateSessionManager.cs" />
+    <Compile Include="Test\HibernateTest.cs" />
+    <Compile Include="Plantillas\PlantillaMaestra.master.cs">
+      <DependentUpon>PlantillaMaestra.master</DependentUpon>
+    </Compile>
+    <Compile Include="Plantillas\PlantillaMaestra.master.designer.cs">
+      <DependentUpon>PlantillaMaestra.master</DependentUpon>
+    </Compile>
+    <Compile Include="Salas\AltaSala.aspx.cs">
+      <DependentUpon>AltaSala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salas\AltaSala.aspx.designer.cs">
+      <DependentUpon>AltaSala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salas\InicioSalas.aspx.cs">
+      <DependentUpon>InicioSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salas\InicioSalas.aspx.designer.cs">
+      <DependentUpon>InicioSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Sala.cs" />
+    <Compile Include="Salas\InicioSalasController.cs" />
+    <Compile Include="Pacientes\AltaPaciente.aspx.cs">
+      <DependentUpon>AltaPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\AltaPaciente.aspx.designer.cs">
+      <DependentUpon>AltaPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Paciente.cs" />
+    <Compile Include="Pacientes\BusquedaPacientes.aspx.cs">
+      <DependentUpon>BusquedaPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\BusquedaPacientes.aspx.designer.cs">
+      <DependentUpon>BusquedaPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\MostrarPaciente.aspx.cs">
+      <DependentUpon>MostrarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\MostrarPaciente.aspx.designer.cs">
+      <DependentUpon>MostrarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\InicioTratamiento.aspx.cs">
+      <DependentUpon>InicioTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\InicioTratamiento.aspx.designer.cs">
+      <DependentUpon>InicioTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\GrupoTratamiento.cs" />
+    <Compile Include="Test\CargaInicialTest.cs" />
+    <Compile Include="Dominio\Estudios.cs" />
+    <Compile Include="Helper\ComboHelper.cs" />
+    <Compile Include="Dominio\TipoContrato.cs" />
+    <Compile Include="Dominio\Provincia.cs" />
+    <Compile Include="Dominio\Titulacion.cs" />
+    <Compile Include="Dominio\EstadoPaciente.cs" />
+    <Compile Include="Fisioterapeutas\AltaFisioterapeuta.aspx.cs">
+      <DependentUpon>AltaFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fisioterapeutas\AltaFisioterapeuta.aspx.designer.cs">
+      <DependentUpon>AltaFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Utilidad.cs" />
+    <Compile Include="Test\TestUtilidad.cs" />
+    <Compile Include="Fisioterapeutas\BusquedaFisioterapeuta.aspx.cs">
+      <DependentUpon>BusquedaFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fisioterapeutas\BusquedaFisioterapeuta.aspx.designer.cs">
+      <DependentUpon>BusquedaFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Fisioterapeuta.cs" />
+    <Compile Include="Fisioterapeutas\MostrarFisioterapeuta.aspx.cs">
+      <DependentUpon>MostrarFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fisioterapeutas\MostrarFisioterapeuta.aspx.designer.cs">
+      <DependentUpon>MostrarFisioterapeuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Estudio.cs" />
+    <Compile Include="Dominio\ProyectoContratacion.cs" />
+    <Compile Include="Citas\DarCita.aspx.cs">
+      <DependentUpon>DarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Citas\DarCita.aspx.designer.cs">
+      <DependentUpon>DarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\HistoriaClinica.cs" />
+    <Compile Include="Dominio\EntidadFinanciadora.cs" />
+    <Compile Include="Pacientes\BusquedaPacientesController.cs" />
+    <Compile Include="Citas\TablaCitasController.cs" />
+    <Compile Include="Dominio\Cita.cs" />
+    <Compile Include="Test\CargaOpcionalDatosTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+        <WebDeployTargets>
+          <Target Name="">
+            <FileCopier Handler="MonoDevelop.Deployment.LocalFileCopyHandler" TargetDirectory="/Users/lopezurda/Projects/Fisio/Web/Mappings" ctype="LocalFileCopyConfiguration" />
+          </Target>
+        </WebDeployTargets>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Dominio\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Plantillas\" />
+    <Folder Include="Test\" />
+    <Folder Include="Salas\" />
+    <Folder Include="Citas\" />
+    <Folder Include="Pacientes\" />
+    <Folder Include="js\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Fisioterapeutas\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_Themes\" />
+    <Folder Include="Imagenes\" />
+    <Folder Include="css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Poduct.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Direccion.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Persona.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Sala.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Paciente.hbm.xml" />
+    <EmbeddedResource Include="js\webkit.js" />
+    <EmbeddedResource Include="Mappings\GrupoTratamiento.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Estudios.hbm.xml" />
+    <EmbeddedResource Include="Mappings\TipoContrato.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Provincia.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Titulacion.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Fisioterapeuta.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EstadoPaciente.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Estudio.hbm.xml" />
+    <EmbeddedResource Include="Mappings\ProyectoContratacion.hbm.xml" />
+    <EmbeddedResource Include="Mappings\HistoriaClinica.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EntidadFinanciadora.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Cita.hbm.xml" />
+    <EmbeddedResource Include="web.config" />
+    <EmbeddedResource Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log4net.xml" />
+    <EmbeddedResource Include="App_GlobalResources\Gaia.WebWidgets.Extensions.Resources.Calendar.es.resx" />
+    <EmbeddedResource Include="App_GlobalResources\Gaia.WebWidgets.Extensions.Resources.Calendar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Themes\.DS_Store" />
+  </ItemGroup>
+</Project>

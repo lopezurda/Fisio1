@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+	
+ 	<class name="Persona" table="fis_persona">
+		<id name="Id" column="id" type="int">			
+			<generator class="increment"/>					
+		</id>
+		<property name="Nombre" column="nombre" type="string"/>
+		<property name="Apellido1" column="apellido1" type="string"/>
+		<property name="Apellido2" column="apellido2" type="string"/>
+		<property name="NIF" column="nif" type="string"/>
+		<property name="FechaNacimiento" column="fecha_nacimiento" type="DateTime"/>
+		<property name="TelefonoFijo" column="telefono_fijo" type="string"/>
+		<property name="TelefonoMovil" column="telefono_movil" type="string"/>
+		<property name="Email" column="email" type="string"/>
+		<many-to-one name="Direccion" class="Direccion" column="id_direccion" unique="true" cascade="all"/>
+	</class> 		
+</hibernate-mapping>

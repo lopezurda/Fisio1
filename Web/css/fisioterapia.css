@@ -1,0 +1,191 @@
+body {
+	margin:0 auto; 
+}
+
+#divCabecera{
+	margin:100px left;
+	text-align:center;
+}
+
+
+#divMenuVertical{
+	float:left;	
+}
+
+#divContenido{
+	margin:0 auto;	
+	float:left;	
+	padding:15px;
+	border: 1px #E7DEEA; 	
+
+}
+
+#divMenuHorizontal{	
+	margin:0 auto;	
+	text-align:center;
+}
+
+#divDatosCita{
+	margin: 0 auto;
+	width:300px;
+	background-color:transparent;
+}
+
+#divBotoneraCentrada{
+	margin: 0 auto;
+	text-align:center;
+	padding: 15px 0 0 0;
+	float:left;
+}
+
+#divDatosBusquedaPaciente{
+	float:left; 
+}
+
+#divResultadoBusquedaPaciente{
+	float:left;
+	margin: 0 margin;
+	text-align:center;
+	padding: 0 0 0 45px;
+}
+
+#divTituloSeccion{
+	margin: 0 auto;
+	text-align:center;
+	float:rigth;
+	padding: 25px 0 0 0;	
+	height: 50px;
+}
+
+#divSeccionError{
+	margin: 0 auto;
+	text-align:center;
+	float:left;
+	padding: 5px 15px 0 0;	
+}
+
+/* Menu horizontal */
+.primaryStaticMenu
+{
+   margin: 0 auto;
+}
+
+.primaryStaticMenuItem
+{
+   width: 10em;
+   background-color: #f7f2ea; 
+   border-width: 1px;
+   border-color: #efefef #aaab9c #ccc #efefef; 
+   border-style: solid;
+   color: #777777;
+   padding: 0.35em 0 0.35em 0;
+
+}
+.primaryStaticHover
+{
+   color: #800000;
+   background: #f0e7d7;
+}
+
+.primaryDynamicMenu
+{   
+   background-color: #f7f2ea;               
+   border-bottom: solid 1px #ccc;    
+}  
+.primaryDynamicMenuItem
+{
+   width: 10em;
+   background-color: #f7f2ea; 
+   color: #777;
+   padding: 0.5em 0 0.5em 1em;
+   border-width: 1px;
+   border-color: #f7f2ea #aaab9c #f7f2ea #efefef;  
+   border-style: solid;         
+}    
+.primaryDynamicHover
+{
+   color: #800000;
+   background: #f0e7d7;
+}            
+
+.secondaryLevelOne
+{
+   background-color: transparent;
+   background-repeat: repeat-x;
+   margin: 1.5em 0 0 0;
+   padding: 5px 0 0 5px;
+   width: 12em; 
+   height: 35px;
+}
+.secondaryLevelTwo
+{
+   background: #FAFBFB;
+   padding: 5px 0 5px 5px;         
+}
+.secondaryStaticHover
+{
+   color: #800000;
+}
+
+/* Menu vertical */
+.primaryStaticMenuVertical
+{
+   background-color: transparent;
+	text-align: left;
+	margin: 0 0 0 10px;
+}
+
+.primaryStaticMenuItemVertical
+{
+   width: 10em;
+   background-color: #DFDEF0; 
+   color: #777777;
+   padding: 0.35em 0.35em 0.35em 10px;
+   border-bottom: 1px solid #CCC;
+   margin:2px 0 0 0;
+}
+.primaryStaticHoverVertical
+{
+   color: #800000;
+   background: #f0e7d7;
+}
+
+.primaryDynamicMenuVertical
+{   
+   background-color: #f7f2ea;               
+   border-bottom: solid 1px #ccc;    
+}  
+.primaryDynamicMenuItemVertical
+{
+   width: 10em;
+   background-color: #f7f2ea; 
+   color: #777;
+   padding: 0.5em 0 0.5em 1em;
+   border-width: 1px;
+   border-color: #f7f2ea #aaab9c #f7f2ea #efefef;  
+   border-style: solid;         
+}    
+.primaryDynamicHoverVertical
+{
+   color: #800000;
+   background: #f0e7d7;
+}            
+
+.secondaryLevelOneVertical
+{
+   background-color: transparent;
+   background-repeat: repeat-x;
+   margin: 1.5em 0 0 0;
+   padding: 5px 0 0 5px;
+   width: 12em; 
+   height: 35px;
+}
+.secondaryLevelTwoVertical
+{
+   background: #FAFBFB;
+   padding: 5px 0 5px 5px;         
+}
+.secondaryStaticHoverVertical
+{
+   color: #800000;
+}

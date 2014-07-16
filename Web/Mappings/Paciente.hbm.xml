@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+	
+ 	<class name="Paciente" table="fis_paciente">
+		<id name="Id" column="id" type="int">			
+			<generator class="increment"/>					
+		</id>
+		<property name="Profesion" column="profesion" type="string"/>
+		<property name="Aficiones" column="aficiones" type="string"/>
+		<property name="Baja" column="baja" type="boolean"/>
+		<many-to-one name="HistoriaClinica" class="HistoriaClinica" column="id_historia_clinica" unique="true" cascade="all"/>
+		<many-to-one name="Estudios" class="Estudios" column="id_estudios" unique="false" cascade="all" lazy="false"/>
+		<many-to-one name="DatosPersonales" class="Persona" column="id_persona" unique="true" cascade="all"/>
+		<many-to-one name="Estudio" class="Estudio" column="id_grupo_tratamiento" unique="false" cascade="none"/>
+		<many-to-one name="EstadoPaciente" class="EstadoPaciente" column="id_estado_paciente" unique="false" cascade="none"/>
+	</class> 		
+	
+ 
+</hibernate-mapping>

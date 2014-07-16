@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+ 
+ 	<class name="GrupoTratamiento" table="fis_grupo_tratamiento">
+		<id name="Id" column="id" type="int">		
+			<generator class="increment"/>	
+		</id>
+		<property name="Sesiones" column="sesiones" type="int"/>
+		<property name="SesionesPorDefecto" column="sesiones_defecto" type="int"/>
+		<property name="Nombre" column="nombre" type="string"/>
+		
+	</class>  
+</hibernate-mapping>

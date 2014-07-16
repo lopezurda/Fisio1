@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Web" 
+                   namespace="Web.Dominio">
+ 
+ 	<class name="ProyectoContratacion" table="fis_proyecto_contratacion">
+		<id name="Id" column="id" type="int">		
+			<generator class="increment"/>	
+		</id>
+		<property name="Nombre" column="nombre" type="string"/>
+		<property name="FechaInicio" column="fecha_inicio" type="DateTime"/>
+		<property name="FechaFin" column="fecha_fin" type="DateTime"/>
+		<many-to-one name="EntidadFinanciadora" class="EntidadFinanciadora" column="id_entidadFinanciadora" unique="true"/>
+	</class> 
+	
+	<query name="getProyectosContratacionVigentes" cacheable="false" read-only="true">
+    <![CDATA[
+    	from ProyectoContratacion as proyectoContratacion where :fechaActual between proyectoContratacion.FechaInicio and proyectoContratacion.FechaFin
+    ]]>
+  	</query>
+	
+</hibernate-mapping>

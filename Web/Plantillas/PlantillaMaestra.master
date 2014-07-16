@@ -1,0 +1,42 @@
+<%@ Master Language="C#" Inherits="Web.PlantillaMaestra" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+<html>
+<head runat="server">
+	<link rel="stylesheet" href="~/App_Themes/Gaiax/GridView.css" type="text/css" />	
+	<link rel="stylesheet" href="~/css/fisioterapia.css" type="text/css" />				
+	<title>Fisioteraripa en los Procesos de Salud de la Mujer</title>
+</head>
+<body>	
+	<div id="divCabecera">
+		<gaia:Image ID="imagenCabecera" runat="server" ImageUrl="~/Imagenes/cabecera.gif" />	
+	</div>	
+	<form id="formPlantillaMaestra" runat="server">			
+		<div id="divMenuHorizontal">				
+			<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+				<StaticMenuStyle CssClass="primaryStaticMenu"/>
+			    <StaticMenuItemStyle CssClass="primaryStaticMenuItem"/>
+			    <StaticHoverStyle CssClass="primaryStaticHover"/>   
+			    <DynamicMenuStyle CssClass="primaryDynamicMenu" />     
+			    <DynamicMenuItemStyle CssClass="primaryDynamicMenuItem"/>
+			    <DynamicHoverStyle CssClass="primaryDynamicHover"/>					
+				<Items>
+					<asp:MenuItem NavigateUrl="~/Pacientes/BusquedaPacientes.aspx" Text="Pacientes" Value="1"/>
+					<asp:MenuItem NavigateUrl="~/Fisioterapeutas/AltaFisioterapeuta.aspx" Text="Fisioterapeutas" Value="2"/>
+					<asp:MenuItem NavigateUrl="~/Salas/InicioSalas.aspx" Text="Salas" Value="3"/>
+					<asp:MenuItem NavigateUrl="~/Citas/DarCita.aspx" Text="Citas" Value="4"/> 
+					<asp:MenuItem NavigateUrl="~/Pacientes/InicioTratamiento.aspx" Text="Inventario" Value="5"/> 		
+				</Items>
+			</asp:Menu>
+		</div>
+		<div id="divPlantillaMaestra">
+			<div id="divMenuVertical">
+				<asp:contentplaceholder id="menuVertical" runat="server" />
+			</div>
+			<div id="divContenido">
+				<asp:contentplaceholder id="contenido" runat="server" />
+			</div>
+		</div>								
+	</form>	
+</body>
+</html>
